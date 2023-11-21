@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary */
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    /* Accent */
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    /* Neutral */
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--Very-Dark-Blue);
+}
+
+.center{
+    width: 90%;
+    max-width: 660px;
+    margin: auto;
+}
+
+h1, h2, h3{
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--Very-Dark-Blue);
+    font-family: 'Raleway', sans-serif;
+}
+/* */
+
+
+/* HEADER SECTION
+*/
+header{
+    width: 100%;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px #0005;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+.navbar li>a{
+    padding: 0 10px;
+    font-size: 1.3em;
+}
+
+.navbar li>a:hover{
+    text-decoration: underline;
+}
+
+.navmobile{
+    text-align: center;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: none;
+}
+
+.navmobile i{
+    font-size: 2em;
+}
+/* */
+
+
+/* FEATURE SECTION
+*/
+#features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#features img{
+    width: 100%;
+    max-width: 630px;
+}
+
+.feature-info{
+    text-align: center;
+}
+
+.feature-info h1{
+    font-size: 2.8em;
+    margin: 30px 0;
+}
+
+.feature-info p{
+    font-size: 1.6em;
+    padding: 0 50px;
+    margin-bottom: 40px;
+}
+
+form input{
+    max-width: 540px;
+    width: 90%;
+    padding: 25px 40px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+form input[type='email']{
+    border: 1px solid var(--Very-Dark-Blue);
+    font-size: 1.1em;
+}
+
+form input[type='email']::placeholder{
+    font-weight: 400;
+    color: var(--Desaturated-Blue);
+}
+
+#mensaje{
+    text-align: left;
+    font-size: 1.1em;
+    padding: 0;
+    margin: 0 auto 20px;
+    max-width: 540px;
+    width: 90%;
+    visibility: hidden;
+}
+
+
+form input[type='submit']{
+    border: none;
+    background-color: var(--Bright-Blue);
+    color: var(--Light-Grayish-Blue);
+    font-weight: 700;
+    font-size: 1.6em;
+    padding: 20px 0;
+    transition: background-color .5s;
+}
+
+form input[type='submit']:hover{
+    cursor: pointer;
+    background-color: hsl(212, 93%, 58%);
+}
+/* */
+
+
+/* TEAM SECTION
+*/
+.wave{
+    background-image: url(../images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    height: 140px;
+}
+
+#team{
+    padding: 50px 0 180px 20px;
+    background-color: #F8F8FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#team .illustration-2{
+    width: 100%;
+    max-width: 630px;
+}
+
+.team-info h2{
+    font-size: 1.8em;
+    margin: 100px 0 40px;
+}
+
+.team-info p{
+    font-size: 1.65em;
+    text-align: left;
+    margin-bottom: 50px;
+    padding-right: 50px;
+    color: var(--Desaturated-Blue);
+}
+
+.team-info a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    padding-bottom: 10px;
+    margin: 0 auto 50px;
+    color: var(--Moderate-Cyan);
+    border-bottom: 1px solid var(--Moderate-Cyan);
+    font-size: 1.2em;
+}
+
+.team-info a:hover{
+    color: hsl(170, 67%, 52%);
+    border-color: hsl(170, 67%, 52%);
+}
+
+.team-info .arrow{
+    display: inline-block;
+    background-image: url(../images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+}
+
+.team-cite{
+    max-width: 570px;
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    padding: 40px 30px 40px 50px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 0 20px #0002;
+    border-radius: 10px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-size: 1.25em;
+}
+
+.team-cite img{
+    width: 20px;
+}
+
+.card-data{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 20px;
+}
+
+.card-data img{
+    grid-row: 1/-1;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.card-name span{
+    display: block;
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+.card-name .title{
+    font-weight: 700;
+}
+.card-name .subtitle{
+    font-size: 0.6em;
+}
+/* */
+
+
+/* SIGN SECTION
+*/
+#sign{
+    background-color: var(--Desaturated-Blue);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0 140px;
+}
+
+.sign-info h2{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.sign-info p{
+    font-size: 1.69em;
+    font-weight: 400;
+    padding: 0 50px;
+    margin-bottom: 20px;
+}
+
+.form-sign input{
+    max-width: 450px;
+}
+
+#errorSign{
+    text-align: left;
+    font-size: 1em;
+    max-width: 450px;
+    width: 90%;
+    margin: 0 auto 20px;
+    visibility: hidden;
+    display: none;
+}
+
+.form-sign input[type="submit"]{
+    font-size: 1.3em;
+}
+/* */
+
+
+/* FOOTER
+*/
+footer{
+    background-color: var(--Very-Dark-Blue);
+    padding: 100px 0 60px;
+    color: #fff;
+}
+
+.logo path{
+    fill: #fff;
+}
+
+.contact{
+    display: grid;
+    row-gap: 40px;
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+.contact-info{
+    line-height: 35px;
+}
+
+.contact span{
+    display: block;
+    line-height: 40px;
+}
+
+.contact span:hover{
+    color: var(--Desaturated-Blue);
+    cursor: pointer;
+}
+
+.social-container{
+    margin: 0 auto 50px;
+    width: 200px;
+}
+.social-container a{
+    border: 2px solid #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 12px;
+    width: 45px;
+    height: 45px;
+}
+.social-container i{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.social-container a:hover i{
+    color: var(--Bright-Blue);
+}
+
+.social-container a:hover{
+    border: 2px solid var(--Bright-Blue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* */
+
+
+/* RESPONSIVE
+*/
+@media screen and (max-width: 575px) {
+    header img{
+        max-width: 120px;
+        margin-right: 20px;
+    }
+
+    .navmobile{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: fixed;
+        background: lavender;
+        right: 0;
+        top: 80px;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        font-weight: bold;
+        text-transform: uppercase;
+        transform: translateX(100%);
+    }
+
+    .navbar2{
+        transform: translateX(0);
+    }
+    
+    .feature-info h1{
+        font-size: 2em;
+    }
+    
+    .feature-info p{
+        font-size: 1.3em;
+    }
+
+    form input[type="submit"]{
+        font-size: 1em;
+    }
+
+    .form-sign input[type="submit"]{
+        font-size: 1em;
+    }
+
+    .team-info a{
+        font-size: 1em;
+    }
+
+    .team-info h2{
+        font-size: 1.4em;
+    }
+    
+    .team-info p{
+        font-size: 1.2em;
+    }
+
+    .card-data{
+        margin-top: 20px;
+    }
+
+    .team-cite{
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .sign-info p{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1010px) {
+    /* FEATURES SECTION*/
+    .center{
+        width: 90%;
+        max-width: none;
+    }
+
+    #features{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .feature-info{
+        width: 650px;
+        text-align: left;
+    }
+
+    .feature-info h1{
+        font-size: 2.3em;
+    }
+    
+    .feature-info p{
+        font-size: 1.3em;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .form-feature{
+        display: flex;
+        column-gap: 20px;
+    }
+
+    form input{
+        height: 50px;
+    }
+
+    form input[type='email']{
+        max-width: 320px;
+        min-width: 280px;
+    }
+
+    #error{
+        margin-left: 0;
+    }
+
+    form input[type='submit']{
+        max-width: 200px;
+        min-width: 160px;
+        font-size: 1.2em;
+        padding: 0;
+    }
+
+    /* TEAM SECTION */
+    .wave{
+        background-image: url(../images/bg-curve-desktop.svg);
+    }
+
+    .team-container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #team .illustration-2{
+        height: 100%;
+    }
+
+    #team article{
+        width: 680px;
+        margin-right: 50px;
+    }
+
+    .team-info{
+        text-align: left;
+    }
+
+    .team-info p{
+        font-size: 1.1em;
+        margin-bottom: 20px;
+        max-width: 500px;
+    }
+
+    .team-info a{
+        margin-left: 0;
+    }
+
+    .team-cite{
+        max-width: 360px;
+        font-size: 1em;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    /* SIGN SECTION */
+    .sign-container{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .sign-info{
+        width: 530px;
+        margin-right: 30px;
+    }
+
+    .sign-info p{
+        font-size: 1.1em;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .form-sign{
+        width: 500px;
+    }
+    
+    .form-sign input[type="email"]{
+        max-width: 500px;
+        padding-left: 20px;
+    }
+
+    .form-sign input[type="submit"]{
+        font-size: 1em;
+        max-width: 200px;
+    }
+
+    /* FOOTER */
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1em;
+        margin-bottom: 60px;
+        max-width: 1100px;
+    }
+
+    .social-container{
+        margin: 0;
+    }
+}
