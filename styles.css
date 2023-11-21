@@ -1,0 +1,61 @@
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0.3393557252002364) 0%, rgba(148,187,233,0.2777310753402924) 100%); 
+}
+
+main {
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main > div {
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#one { background-image: url(images/pagina1.png); }
+
+#two { 
+    background-image: url(images/pagina2.png); 
+    background-position: right;
+}
+
+#three { 
+    background-image: url(images/pagina3.png); 
+    background-position: right;
+}
+
+.texto {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Lucida Sans';
+    color: snow;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(148,187,233);
+    padding: 16px 40px;
+    color: snow;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 20px;
+}
